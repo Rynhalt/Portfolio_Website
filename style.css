@@ -19,8 +19,6 @@ body {
     background-image: url(images/space.jpg);
     background-size: cover;
     background-position: center;
-    filter: sepia(70%);
-    opacity: 100%;
 }
 
 .container {
