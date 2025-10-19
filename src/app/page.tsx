@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
-import QuestPreviewSection from "@/components/QuestPreviewSection";
-import QuestCta from "@/components/QuestCta";
+import PrototypePreviewSection from "@/components/PrototypePreviewSection";
+import ContactCta from "@/components/ContactCta";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
       <main className="flex flex-1 flex-col gap-28 pb-24 md:gap-32">
         <HeroSection />
         <ProjectsShowcase />
-        <QuestPreviewSection />
-        <QuestCta />
+        <PrototypePreviewSection />
+        <ContactCta />
       </main>
       <SiteFooter />
     </div>

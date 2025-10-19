@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { questCta } from "@/utils/animations";
+import { contactCta } from "@/utils/animations";
 
-export default function QuestCta() {
+export default function ContactCta() {
   return (
     <motion.section
       id="contact"
-      variants={questCta}
+      variants={contactCta}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}

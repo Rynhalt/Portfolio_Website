@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import RpgScene from "@/components/QuestMode/RpgScene";
+import PrototypeScene from "@/components/PrototypeMode/PrototypeScene";
 import {
   sectionHeadingContainer,
   sectionHeadingItem,
 } from "@/utils/animations";
 
-export default function QuestPreviewSection() {
+export default function PrototypePreviewSection() {
   return (
     <section id="prototype" className="px-6 md:px-12 lg:px-24">
       <motion.header
@@ -30,7 +30,7 @@ export default function QuestPreviewSection() {
           Interactive Walkthrough
         </motion.h2>
       </motion.header>
-      <RpgScene />
+      <PrototypeScene />
     </section>
   );
 }

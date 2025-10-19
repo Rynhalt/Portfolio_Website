@@ -10,7 +10,7 @@ import {
   sectionHeadingContainer,
   sectionHeadingItem,
 } from "@/utils/animations";
-import QuestCta from "@/components/QuestCta";
+import ContactCta from "@/components/ContactCta";
 
 const typeLabels: Record<Project["type"], string> = {
   system: "Systems",
@@ -195,7 +195,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
         </aside>
       </motion.section>
 
-      <QuestCta />
+      <ContactCta />
     </main>
   );
 }

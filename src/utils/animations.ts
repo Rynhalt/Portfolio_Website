@@ -50,7 +50,7 @@ export const projectCard: Variants = {
   },
 };
 
-export const questCta: Variants = {
+export const contactCta: Variants = {
   hidden: { opacity: 0, y: 28 },
   show: {
     opacity: 1,
