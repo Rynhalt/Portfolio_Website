@@ -149,7 +149,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
             </ul>
           </div>
           {project.pdf ? (
-            <div className="pdf-frame h-72">
+            <div className="pdf-frame h-[28rem] md:h-[34rem] lg:h-[40rem]">
               <object
                 data={project.pdf}
                 type="application/pdf"
