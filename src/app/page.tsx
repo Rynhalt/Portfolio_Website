@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProjectPanel from "@/components/ProjectPanel";
 import RpgScene from "@/components/QuestMode/RpgScene";
+import QuestCta from "@/components/QuestCta";
 import { projects } from "@/data/projects";
 
 export default function Home() {
@@ -44,24 +45,7 @@ export default function Home() {
           <RpgScene />
         </section>
 
-        <section
-          id="contact"
-          className="px-6 pb-12 text-center md:text-left lg:px-24"
-        >
-          <div className="mx-auto max-w-3xl rounded-xl border border-gold/40 bg-royal-blue/60 p-8 shadow-[0_0_24px_rgba(244,208,63,0.2)] md:mx-0">
-            <h3 className="font-heading text-2xl md:text-3xl">
-              Ready to Party Up?
-            </h3>
-            <p className="mt-4 text-base text-foreground/80">
-              This realm is under active construction. Soon you&apos;ll find
-              contact dialogs, lore codices, and a polished modern layout paired
-              with an interactive quest experience.
-            </p>
-            <a className="pixel-button mt-6" href="mailto:marcus@izumi.dev">
-              Send a Carrier Pigeon
-            </a>
-          </div>
-        </section>
+        <QuestCta />
       </main>
       <footer className="px-6 pb-10 text-center text-xs text-foreground/60">
         Crafted with curiosity &amp; nostalgia — © {new Date().getFullYear()}{" "}
