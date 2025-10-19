@@ -14,11 +14,11 @@ export default function QuestCta() {
       className="px-6 pb-12 text-center md:px-12 md:text-left lg:px-24"
     >
       <div className="mx-auto max-w-3xl rounded-xl border border-gold/40 bg-royal-blue/60 p-8 shadow-[0_0_24px_rgba(244,208,63,0.2)] md:mx-0">
-        <h3 className="font-heading text-2xl md:text-3xl">Ready to Party Up?</h3>
+        <h3 className="font-heading text-2xl md:text-3xl">Let&apos;s collaborate</h3>
         <p className="mt-4 text-base text-foreground/80">
-          This realm is under active construction. Soon you&apos;ll find contact
-          dialogs, lore codices, and a polished modern layout paired with an
-          interactive quest experience.
+          I&apos;m refining this portfolio while shipping distributed systems and
+          interface experiments. Reach out if you&apos;d like to talk about
+          infrastructure, tooling, or product engineering.
         </p>
         <motion.a
           whileHover={{ y: -2 }}
@@ -26,7 +26,7 @@ export default function QuestCta() {
           className="pixel-button mt-6"
           href="mailto:marcus@izumi.dev"
         >
-          Send a Carrier Pigeon
+          Contact Marcus
         </motion.a>
       </div>
     </motion.section>

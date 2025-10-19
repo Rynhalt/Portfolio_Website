@@ -22,8 +22,8 @@ export function generateMetadata({
 
   if (!project) {
     return {
-      title: "Quest not found — Rynhalt Portfolio",
-      description: "This quest scroll has yet to be written.",
+      title: "Project not found — Rynhalt Portfolio",
+      description: "This project page is not available.",
     };
   }
 

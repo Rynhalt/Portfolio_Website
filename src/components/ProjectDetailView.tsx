@@ -43,7 +43,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
             href="/"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
-            ← Return to Overworld
+            ← Back to portfolio
           </Link>
           <span>{typeLabel}</span>
         </motion.div>
@@ -163,7 +163,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
                     rel="noopener noreferrer"
                     className="underline"
                   >
-                    Download the quest brief
+                    Download the project brief
                   </a>
                   .
                 </p>

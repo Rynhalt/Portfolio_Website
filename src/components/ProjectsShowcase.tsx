@@ -28,15 +28,15 @@ export default function ProjectsShowcase() {
           variants={sectionHeadingItem}
           className="font-heading text-3xl md:text-4xl"
         >
-          Featured Quests &amp; Systems
+          Featured Projects &amp; Systems
         </motion.h2>
         <motion.p
           variants={sectionHeadingItem}
           className="mx-auto max-w-3xl text-base text-foreground/80 md:mx-0"
         >
-          Explore recent projects that showcase infrastructure rigor, immersive
-          UX, and playful nostalgia. Expect Framer Motion flourishes, pixel
-          borders, and dynamic theming as we iterate.
+          Explore recent work that highlights infrastructure rigor, accessible
+          interfaces, and motion studies. Expect continuous iteration as new
+          experiments land here.
         </motion.p>
       </motion.header>
 

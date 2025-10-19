@@ -11,7 +11,7 @@ import {
 
 const navLinks = [
   { href: "/#projects", label: "Projects" },
-  { href: "/#quest", label: "Quest Mode" },
+  { href: "/#prototype", label: "Prototype" },
   { href: "/#contact", label: "Contact" },
 ];
 

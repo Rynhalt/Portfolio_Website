@@ -65,7 +65,7 @@ export const projects: Project[] = [
   },
   {
     id: "quest-ui",
-    title: "Quest UI Motion Playground",
+    title: "Motion UI Playground",
     description:
       "Experimented with pixel-perfect motion studies that blend Framer Motion with CRT-inspired shaders for nostalgic yet crisp UX.",
     tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
@@ -77,13 +77,13 @@ export const projects: Project[] = [
     summary:
       "A living playground for modern-meets-retro interactions: CRT bloom shaders, parallax overworlds, and delightful micro-interactions that still respect accessibility budgets.",
     highlights: [
-      "Crafted reusable Framer Motion primitives for scroll-linked progress, floating navs, and quest dialogs.",
-      "Built pixel-border Tailwind utilities and animation tokens that keep retro styling consistent.",
-      "Prototype hero sprite movement logic that will power the Quest Mode walkthrough experience.",
+      "Crafted reusable Framer Motion primitives for scroll-linked progress, floating navigation, and dialog overlays.",
+      "Built pixel-border Tailwind utilities and animation tokens that keep the visual language consistent.",
+      "Prototyped sprite movement, collision checks, and camera flow for the interactive mode.",
     ],
     outcomes: [
       "Established the visual language used across the Rynhalt portfolio refresh.",
-      "Serves as a sandbox for testing Quest Mode performance targets ahead of public launch.",
+      "Provides a sandbox for validating performance targets ahead of the interactive launch.",
     ],
     type: "web",
   },

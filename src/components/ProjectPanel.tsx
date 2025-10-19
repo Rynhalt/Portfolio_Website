@@ -49,7 +49,7 @@ export default function ProjectPanel({ project }: ProjectPanelProps) {
           href={`/projects/${project.id}`}
           className="pixel-button pixel-button--inline"
         >
-          View Quest Scroll
+          View Project Brief
         </Link>
         {project.externalLink ? (
           <a

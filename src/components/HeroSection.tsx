@@ -22,25 +22,25 @@ export default function HeroSection() {
         variants={heroItem}
         className="font-heading text-4xl leading-tight md:text-6xl"
       >
-        Marcus Izumi — Systems Engineer on a Quest for Delightful UX
+        Marcus Izumi — Systems Engineer crafting dependable, engaging products
       </motion.h1>
       <motion.p
         variants={heroItem}
         className="mx-auto max-w-2xl text-base text-foreground/80 md:mx-0 md:text-lg"
       >
-        This portfolio blends modern engineering rigor with retro RPG charm.
-        Toggle between Modern and Quest modes to explore projects, experience,
-        and craft.
+        This portfolio combines modern engineering rigor with thoughtful
+        interaction design. Explore recent work and experiments in both a
+        polished showcase and an interactive prototype view.
       </motion.p>
       <motion.div
         variants={heroCta}
         className="flex flex-col gap-4 md:flex-row md:items-center"
       >
         <a className="pixel-button" href="#projects">
-          Enter Modern Mode
+          View Featured Work
         </a>
-        <a className="pixel-button pixel-button--ghost" href="#quest">
-          Begin Quest Mode
+        <a className="pixel-button pixel-button--ghost" href="#prototype">
+          Explore Prototype Mode
         </a>
       </motion.div>
     </motion.section>

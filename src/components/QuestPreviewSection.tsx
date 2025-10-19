@@ -9,7 +9,7 @@ import {
 
 export default function QuestPreviewSection() {
   return (
-    <section className="px-6 md:px-12 lg:px-24">
+    <section id="prototype" className="px-6 md:px-12 lg:px-24">
       <motion.header
         initial="hidden"
         whileInView="show"
@@ -21,13 +21,13 @@ export default function QuestPreviewSection() {
           variants={sectionHeadingItem}
           className="text-xs uppercase tracking-[0.3em] text-accent"
         >
-          Quest Mode Preview
+          Prototype Preview
         </motion.span>
         <motion.h2
           variants={sectionHeadingItem}
           className="font-heading text-3xl md:text-4xl"
         >
-          Walk the Overworld
+          Interactive Walkthrough
         </motion.h2>
       </motion.header>
       <RpgScene />
