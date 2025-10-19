@@ -23,6 +23,7 @@ export const projects: Project[] = [
     tech: ["TypeScript", "React", "KDB+", "Grafana"],
     emoji: "🗼",
     externalLink: "https://github.com/Rynhalt",
+    image: "/images/kdb.png",
     timeline: "Summer 2024 · SMBC Nikko Securities",
     role: "Systems Engineering Intern",
     summary:

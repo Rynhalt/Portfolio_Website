@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import type { Project } from "@/data/projects";
 import {
@@ -147,6 +148,18 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
               ))}
             </ul>
           </div>
+          {project.image ? (
+            <figure className="overflow-hidden rounded-xl border border-gold/30">
+              <Image
+                src={project.image}
+                alt={`${project.title} preview`}
+                width={640}
+                height={360}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </figure>
+          ) : null}
           {project.externalLink ? (
             <a
               href={project.externalLink}
