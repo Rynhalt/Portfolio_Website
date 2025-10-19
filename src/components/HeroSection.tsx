@@ -10,7 +10,7 @@ export default function HeroSection() {
       variants={heroContainer}
       initial="hidden"
       animate="show"
-      className="relative flex flex-col gap-6 px-6 py-24 text-center md:text-left"
+      className="relative flex flex-col gap-6 px-6 py-24 text-center md:px-12 md:text-left lg:px-24 lg:py-32"
     >
       <motion.span
         variants={heroItem}
@@ -20,13 +20,13 @@ export default function HeroSection() {
       </motion.span>
       <motion.h1
         variants={heroItem}
-        className="font-heading text-4xl md:text-6xl leading-tight"
+        className="font-heading text-4xl leading-tight md:text-6xl"
       >
         Marcus Izumi — Systems Engineer on a Quest for Delightful UX
       </motion.h1>
       <motion.p
         variants={heroItem}
-        className="max-w-2xl text-base md:text-lg text-foreground/80"
+        className="mx-auto max-w-2xl text-base text-foreground/80 md:mx-0 md:text-lg"
       >
         This portfolio blends modern engineering rigor with retro RPG charm.
         Toggle between Modern and Quest modes to explore projects, experience,

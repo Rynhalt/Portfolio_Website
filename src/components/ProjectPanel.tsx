@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Project } from "@/data/projects";
 import { projectCard } from "@/utils/animations";
@@ -39,18 +40,28 @@ export default function ProjectPanel({ project }: ProjectPanelProps) {
           </li>
         ))}
       </ul>
-      {project.link ? (
-        <motion.a
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.97 }}
+      <motion.div
+        whileHover={{ y: -2 }}
+        whileTap={{ scale: 0.97 }}
+        className="flex items-center gap-3 pt-2"
+      >
+        <Link
+          href={`/projects/${project.id}`}
           className="pixel-button pixel-button--inline"
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           View Quest Scroll
-        </motion.a>
-      ) : null}
+        </Link>
+        {project.externalLink ? (
+          <a
+            href={project.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs uppercase tracking-[0.25em] text-accent underline-offset-4 hover:underline"
+          >
+            External Link →
+          </a>
+        ) : null}
+      </motion.div>
     </motion.article>
   );
 }

@@ -58,3 +58,39 @@ export const questCta: Variants = {
     transition: { duration: 0.6, ease: "easeOut" },
   },
 };
+
+export const sectionHeadingContainer: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.12 },
+  },
+};
+
+export const sectionHeadingItem: Variants = {
+  hidden: { opacity: 0, y: 14 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.45, ease: "easeOut" },
+  },
+};
+
+export const detailSection: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.65, ease: "easeOut" },
+  },
+};
+
+export const detailListItem: Variants = {
+  hidden: { opacity: 0, x: -12 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.35, ease: "easeOut" },
+  },
+};
