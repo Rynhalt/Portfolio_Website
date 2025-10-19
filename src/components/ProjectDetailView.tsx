@@ -148,6 +148,28 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
               ))}
             </ul>
           </div>
+          {project.pdf ? (
+            <div className="pdf-frame h-72">
+              <object
+                data={project.pdf}
+                type="application/pdf"
+                className="h-full w-full"
+              >
+                <p className="p-4 text-xs text-foreground/70">
+                  PDF preview unavailable.{" "}
+                  <a
+                    href={project.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    Download the quest brief
+                  </a>
+                  .
+                </p>
+              </object>
+            </div>
+          ) : null}
           {project.image ? (
             <figure className="overflow-hidden rounded-xl border border-gold/30">
               <Image

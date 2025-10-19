@@ -5,6 +5,7 @@ export interface Project {
   tech: string[];
   emoji?: string;
   image?: string;
+  pdf?: string;
   externalLink?: string;
   timeline: string;
   role: string;
@@ -70,6 +71,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
     emoji: "✨",
     externalLink: "https://github.com/Rynhalt",
+    pdf: "/pdfs/quest-ui-brief.pdf",
     timeline: "Ongoing · Personal Exploration",
     role: "Product Designer & Frontend Engineer",
     summary:

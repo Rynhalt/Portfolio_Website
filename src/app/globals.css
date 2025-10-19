@@ -84,6 +84,19 @@ body {
   color: var(--color-parchment);
 }
 
+.pdf-frame {
+  border: 2px solid rgba(244, 208, 63, 0.45);
+  border-radius: 0.75rem;
+  background: rgba(9, 11, 32, 0.9);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 2px rgba(15, 16, 42, 0.75),
+    0 18px 36px rgba(8, 9, 30, 0.45);
+}
+
+.pdf-frame object {
+  display: block;
+}
+
 .shadow-pixel {
   box-shadow: 0 4px 0 #222, 0 0 0 3px rgba(244, 208, 63, 0.6);
 }
