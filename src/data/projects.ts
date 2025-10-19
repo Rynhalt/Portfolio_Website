@@ -75,7 +75,7 @@ export const projects: Project[] = [
     timeline: "Ongoing · Personal Exploration",
     role: "Product Designer & Frontend Engineer",
     summary:
-      "A living playground for modern-meets-retro interactions: CRT bloom shaders, parallax overworlds, and delightful micro-interactions that still respect accessibility budgets.",
+      "A living playground for modern-meets-retro interactions: CRT bloom shaders, parallax scenes, and micro-interactions that stay within accessibility budgets.",
     highlights: [
       "Crafted reusable Framer Motion primitives for scroll-linked progress, floating navigation, and dialog overlays.",
       "Built pixel-border Tailwind utilities and animation tokens that keep the visual language consistent.",
