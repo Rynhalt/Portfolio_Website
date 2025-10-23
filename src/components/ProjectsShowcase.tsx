@@ -30,13 +30,6 @@ export default function ProjectsShowcase() {
         >
           Featured Projects &amp; Experiments
         </motion.h2>
-        <motion.p
-          variants={sectionHeadingItem}
-          className="mx-auto max-w-3xl text-base text-foreground/80 md:mx-0"
-        >
-          Selected builds from hackathons and personal R&amp;D — autonomous agents,
-          immersive storytelling, and inventive audio experiences.
-        </motion.p>
       </motion.header>
 
       <div className="mx-auto flex max-w-5xl flex-col gap-12">

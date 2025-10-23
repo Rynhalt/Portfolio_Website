@@ -22,7 +22,7 @@ export const projects: Project[] = [
     id: "echodio",
     title: "Echodio — Immersive Audio Rooms",
     description:
-      "Weather-reactive ambient music app that synchronizes visuals and AI-generated soundscapes to a listener’s environment.",
+      "Weather-reactive ambient music app that syncs visuals and Suno AI soundscapes to the listener’s environment.",
     tech: [
       "Next.js",
       "React",
@@ -33,16 +33,15 @@ export const projects: Project[] = [
       "GoAPI (Suno AI)",
       "TailwindCSS",
     ],
-    emoji: "🎧",
     image: "/images/projects/Echodio.png",
     gallery: [
-      "/images/projects/Echodio.png",
       "/images/projects/Echodio2.png",
+      "/images/projects/Echodio3.png",
     ],
     timeline: "Jun 2024 – Sep 2024",
     role: "Product Engineer",
     summary:
-      "Crafted a Lo-Fi inspired ambient experience that adapts music and visuals to real-time weather, location, and mood signals while managing sessions and favorites in Firebase.",
+      "Built a weather-driven ambient player with Suno AI tracks and Firebase session sync.",
     highlights: [
       "Linked OpenWeather telemetry to dynamic themes so the UI mirrors local climate and time of day.",
       "Integrated Suno AI via GoAPI to generate genre-specific tracks that match the user’s atmosphere.",
@@ -58,7 +57,7 @@ export const projects: Project[] = [
   },
   {
     id: "alpha-agents",
-    title: "AlphaAgents Ops Copilot",
+    title: "AlphaAgents for Stock Evaluation",
     description:
       "Debate-driven multi-agent framework that reverse-engineers BlackRock’s Aug 2025 portfolio construction research for stock evaluation.",
     tech: [
@@ -71,12 +70,11 @@ export const projects: Project[] = [
       "Jinja",
       "GitHub Actions",
     ],
-    emoji: "🧠",
     image: "/images/projects/alpha.png",
     timeline: "Aug 2025 – Present",
     role: "Systems Engineer",
     summary:
-      "Reverse-engineering a debate-driven LLM stack where fundamental, sentiment, and valuation agents critique each other before a coordinator finalizes equity picks with explainable traces.",
+      "Personal learning project to implement the debate-driven multi-agent framework from BlackRock’s Aug 2025 paper for stock evaluation.",
     highlights: [
       "Implemented domain-specific agents that emit structured reports with reasoning, metrics, and confidence scoring.",
       "Built a debate engine that streams multi-round critiques over SSE while logging every turn to reasoning_trace.jsonl.",
@@ -108,7 +106,6 @@ export const projects: Project[] = [
       "Google Cloud Platform",
       "CSS Animations",
     ],
-    emoji: "☕",
     image: "/images/projects/SpaceCafe.png",
     videos: [
       "https://www.youtube.com/watch?v=1VFKOktbCgE",
@@ -116,7 +113,7 @@ export const projects: Project[] = [
     timeline: "Apr 2024 – Jun 2024",
     role: "Frontend & Systems Lead",
     summary:
-      "Designed an interstellar café journey that zooms from orbit into a cozy virtual hangout, blending real-time chat and ambience to support astronaut wellbeing.",
+      "Built an interstellar café experience with Three.js visuals, Socket.io chat, and ambient audio to support astronaut wellbeing.",
     highlights: [
       "Animated a seamless solar-system fly-in with Three.js that lands visitors inside the SpaceCafe lounge.",
       "Implemented Socket.io servers for global public chats and invite-only family rooms with access keys.",

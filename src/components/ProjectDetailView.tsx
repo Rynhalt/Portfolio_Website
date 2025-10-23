@@ -197,7 +197,7 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
           {project.videos?.map((video) => (
             <div
               key={video}
-              className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)]"
+              className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)] w-full md:w-[80%] self-center"
             >
               <div className="w-full" style={{ aspectRatio: "16 / 9" }}>
                 <iframe
@@ -211,7 +211,10 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
             </div>
           ))}
           {gallery.map((image) => (
-            <figure key={image} className="overflow-hidden rounded-xl border border-gold/30">
+            <figure
+              key={image}
+              className="overflow-hidden rounded-xl border border-gold/30 w-full md:w-[80%] self-center"
+            >
               <Image
                 src={image}
                 alt={`${project.title} preview`}

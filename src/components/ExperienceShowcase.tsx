@@ -30,13 +30,6 @@ export default function ExperienceShowcase() {
         >
           Experiences &amp; Impact
         </motion.h2>
-        <motion.p
-          variants={sectionHeadingItem}
-          className="mx-auto max-w-3xl text-base text-foreground/80 md:mx-0"
-        >
-          Highlights from internships, startup launches, and student lab work —
-          shipping dependable systems and experiences with measurable outcomes.
-        </motion.p>
       </motion.header>
 
       <div className="mx-auto flex max-w-5xl flex-col gap-12">

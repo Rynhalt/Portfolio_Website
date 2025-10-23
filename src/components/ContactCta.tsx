@@ -14,19 +14,23 @@ export default function ContactCta() {
       className="px-6 pb-12 text-center md:px-12 md:text-left lg:px-24"
     >
       <div className="mx-auto max-w-3xl rounded-xl border border-gold/40 bg-royal-blue/60 p-8 shadow-[0_0_24px_rgba(244,208,63,0.2)] md:mx-0">
-        <h3 className="font-heading text-2xl md:text-3xl">Let&apos;s collaborate</h3>
+        <h3 className="font-heading text-2xl md:text-3xl">
+          Let&apos;s connect
+        </h3>
         <p className="mt-4 text-base text-foreground/80">
-          I&apos;m refining this portfolio while shipping distributed systems and
-          interface experiments. Reach out if you&apos;d like to talk about
-          infrastructure, tooling, or product engineering.
+          I&apos;m working on distributed systems, AI agents, and product
+          interfaces. Message me on LinkedIn if you want to collaborate or talk
+          shop.
         </p>
         <motion.a
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.97 }}
           className="pixel-button mt-6"
-          href="mailto:marcus@izumi.dev"
+          href="https://www.linkedin.com/in/marcus-izumi/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Contact Marcus
+          Message on LinkedIn
         </motion.a>
       </div>
     </motion.section>

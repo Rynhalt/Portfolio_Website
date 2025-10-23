@@ -20,13 +20,13 @@ export const experiences: Experience[] = [
   {
     id: "bufitcheck",
     organization: "Boston University Spark!",
-    title: "Technical Teammate · BUSpark!",
+    title: "Technical Teammate · BU Spark!",
     description:
-      "Building BU FitCheck inside BU Spark! — a sustainability-focused hybrid web/mobile app that powers thrift shop inventory and student browsing.",
+      "Shipping BU FitCheck at BU Spark!, a hybrid web/mobile app that keeps thrift shop inventory and student browsing in sync.",
     timeline: "Aug 2025 – Present",
-    role: "Full-Stack Technical Teammate",
+    role: "Current Technical Teammate",
     summary:
-      "Leading frontend and API integration for BU FitCheck as part of BU Spark!, combining Next.js, Ionic, and Google Cloud Functions so thrift shops manage inventory while students browse AI-tagged listings enriched by Cloud Vision analysis.",
+      "Maintain the BU FitCheck frontend and APIs with Cloud Functions, Cloud Vision, and OpenAI to keep inventory updates and search fast.",
     tech: [
       "Next.js",
       "Ionic Framework",
@@ -54,20 +54,20 @@ export const experiences: Experience[] = [
   {
     id: "smbc-nikko",
     organization: "SMBC Nikko Securities",
-    title: "Systems Engineering Intern",
+    title: "Equity Systems Developer Intern",
     description:
-      "Built observability modules for SMBC Nikko’s TorQ-based market data platform, capturing resource metrics and surfacing latency anomalies.",
+      "Collected observability metrics from KDB+ databases that process hundreds of millions of Tokyo Stock Exchange records each day and surfaced system and pipeline latency issues.",
     timeline: "Jul 2025 – Sep 2025",
-    role: "Systems Engineering Intern",
+    role: "Equity Systems Developer Intern",
     summary:
-      "Authored the KDB Observability Platform for the Equity Systems Division — exporters, dashboards, and trace tooling that give traders and SREs instant visibility into tickerplant, RDB, and HDB performance.",
+      "Built the KDB observability stack for the Equity Systems Division — exporters, dashboards, and trace tooling that track system, process, and pipeline latency across tickerplant, RDB, and HDB flows handling Tokyo Stock Exchange feeds.",
     tech: ["KDB+ / q", "TorQ", "Grafana", "Prometheus", "Linux", "Shell", "Python", "Docker"],
     image: "/images/experience/Nikko.png",
     pdf: "/pdfs/SMBC_KDB.pdf",
     highlights: [
       "Shipped Prometheus exporters in q that emit CPU, memory, I/O, and latency metrics across TorQ components.",
       "Designed Grafana dashboards that visualize process lifecycles and flag RDB/HDB performance regressions in real time.",
-      "Improved log parsing and trace correlation so on-call engineers could pinpoint tickerplant anomalies within minutes.",
+      "Improved log parsing, trace correlation, and metric analysis so on-call engineers could pinpoint tickerplant anomalies within minutes.",
       "Partnered with front-office and infra teams to validate end-to-end market data flows between tickerplant, RDB, and HDB tiers.",
     ],
     outcomes: [
@@ -78,13 +78,13 @@ export const experiences: Experience[] = [
   {
     id: "workx",
     organization: "WorkX, Inc.",
-    title: "Founding Full-Stack Engineer",
+    title: "Full-Stack Engineering Intern",
     description:
-      "Built automation for WorkX’s consultant-matching platform — from resume parsing to project dashboards — during a full-stack internship in Tokyo.",
+      "Built automation for WorkX’s consultant-matching platform during a full-stack internship in Tokyo.",
     timeline: "Jun 2024 – Sep 2024",
     role: "Full-Stack Engineering Intern",
     summary:
-      "Owned the frontend and data integration for WorkX’s project-matching portal, using AI-assisted resume parsing and Firebase-backed APIs to connect consultants with client engagements at scale.",
+      "Delivered the frontend and data integrations for WorkX’s project-matching portal, using AI-assisted resume parsing and Firebase-backed APIs to connect consultants with client engagements.",
     tech: [
       "React",
       "TypeScript",

@@ -178,7 +178,7 @@ export default function ExperienceDetailView({
             </ul>
           </div>
           {experience.video ? (
-            <div className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)]">
+            <div className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)] w-full md:w-[80%] self-center">
               <div className="w-full" style={{ aspectRatio: "16 / 9" }}>
                 <iframe
                   src={getYoutubeEmbedUrl(experience.video)}
@@ -191,7 +191,7 @@ export default function ExperienceDetailView({
             </div>
           ) : null}
           {experience.image ? (
-            <figure className="overflow-hidden rounded-xl border border-gold/30">
+            <figure className="overflow-hidden rounded-xl border border-gold/30 w-full md:w-[80%] self-center">
               <Image
                 src={experience.image}
                 alt={`${experience.organization} experience preview`}
