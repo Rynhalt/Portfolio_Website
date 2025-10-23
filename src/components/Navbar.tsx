@@ -52,7 +52,9 @@ export default function Navbar() {
     >
       <motion.nav layout style={{ boxShadow: glowShadow }} className={navClass}>
         <Link
-          href="/"
+          href="https://github.com/Rynhalt"
+          target="_blank"
+          rel="noopener noreferrer"
           className="font-heading text-sm uppercase tracking-[0.35em]"
         >
           Rynhalt
