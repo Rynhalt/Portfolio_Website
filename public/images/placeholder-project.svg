@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradProject" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B2F62"/>
+      <stop offset="100%" stop-color="#1E2A78"/>
+    </linearGradient>
+    <pattern id="scanlines" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="2" fill="rgba(244,208,63,0.15)"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#gradProject)"/>
+  <rect width="640" height="480" fill="url(#scanlines)"/>
+  <text x="50%" y="52%" text-anchor="middle" font-family="monospace" font-size="28" fill="#F4D03F" fill-opacity="0.75">
+    Project Preview
+  </text>
+</svg>

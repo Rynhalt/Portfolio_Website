@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="alphaAgentsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111537" />
+      <stop offset="100%" stop-color="#1E2A78" />
+    </linearGradient>
+    <pattern id="alphaAgentsGrid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="none" stroke="#F4D03F" stroke-opacity="0.14" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#alphaAgentsGradient)" />
+  <rect width="640" height="480" fill="url(#alphaAgentsGrid)" />
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="18" fill="#F4D03F" fill-opacity="0.82">
+    AlphaAgents Preview
+  </text>
+</svg>

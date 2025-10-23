@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ProjectPanel from "@/components/ProjectPanel";
-import { projects } from "@/data/projects";
+import ExperiencePanel from "@/components/ExperiencePanel";
+import { experiences } from "@/data/experience";
 import {
   sectionHeadingContainer,
   sectionHeadingItem,
 } from "@/utils/animations";
 
-export default function ProjectsShowcase() {
+export default function ExperienceShowcase() {
   return (
-    <section id="projects" className="px-6 md:px-12 lg:px-24">
+    <section id="experience" className="px-6 md:px-12 lg:px-24">
       <motion.header
         initial="hidden"
         whileInView="show"
@@ -22,26 +22,30 @@ export default function ProjectsShowcase() {
           variants={sectionHeadingItem}
           className="font-heading text-xs uppercase tracking-[0.5em] text-accent/80"
         >
-          · Projects ·
+          · Experience ·
         </motion.span>
         <motion.h2
           variants={sectionHeadingItem}
           className="font-heading text-3xl md:text-4xl"
         >
-          Featured Projects &amp; Experiments
+          Experiences &amp; Impact
         </motion.h2>
         <motion.p
           variants={sectionHeadingItem}
           className="mx-auto max-w-3xl text-base text-foreground/80 md:mx-0"
         >
-          Selected builds from hackathons and personal R&amp;D — autonomous agents,
-          immersive storytelling, and inventive audio experiences.
+          Highlights from internships, startup launches, and student lab work —
+          shipping dependable systems and experiences with measurable outcomes.
         </motion.p>
       </motion.header>
 
       <div className="mx-auto flex max-w-5xl flex-col gap-12">
-        {projects.map((project, index) => (
-          <ProjectPanel key={project.id} project={project} index={index} />
+        {experiences.map((experience, index) => (
+          <ExperiencePanel
+            key={experience.id}
+            experience={experience}
+            index={index}
+          />
         ))}
       </div>
     </section>

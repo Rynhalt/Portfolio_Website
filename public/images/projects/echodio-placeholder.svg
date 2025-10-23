@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="echodioGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1F4F" />
+      <stop offset="100%" stop-color="#2B2F62" />
+    </linearGradient>
+    <pattern id="echodioScanlines" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="2" fill="rgba(244,208,63,0.18)" />
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#echodioGradient)" />
+  <rect width="640" height="480" fill="url(#echodioScanlines)" />
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="18" fill="#F4D03F" fill-opacity="0.82">
+    Echodio Preview
+  </text>
+</svg>

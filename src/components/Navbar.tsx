@@ -10,8 +10,8 @@ import {
 } from "framer-motion";
 
 const navLinks = [
+  { href: "/#experience", label: "Experience" },
   { href: "/#projects", label: "Projects" },
-  { href: "/#prototype", label: "Prototype" },
   { href: "/#contact", label: "Contact" },
 ];
 

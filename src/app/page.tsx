@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ExperienceShowcase from "@/components/ExperienceShowcase";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
-import PrototypePreviewSection from "@/components/PrototypePreviewSection";
 import ContactCta from "@/components/ContactCta";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -11,8 +11,8 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-1 flex-col gap-28 pb-24 md:gap-32">
         <HeroSection />
+        <ExperienceShowcase />
         <ProjectsShowcase />
-        <PrototypePreviewSection />
         <ContactCta />
       </main>
       <SiteFooter />

@@ -1,0 +1,16 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="workxGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B224F" />
+      <stop offset="100%" stop-color="#2D3A7A" />
+    </linearGradient>
+    <pattern id="workxGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="none" stroke="#F4D03F" stroke-opacity="0.12" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="url(#workxGradient)" />
+  <rect width="640" height="480" fill="url(#workxGrid)" />
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="18" fill="#F4D03F" fill-opacity="0.8">
+    WorkX Preview
+  </text>
+</svg>
