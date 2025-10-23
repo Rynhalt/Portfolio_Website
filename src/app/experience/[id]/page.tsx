@@ -9,16 +9,22 @@ interface ExperienceParams {
   id: string;
 }
 
+const resolveParams = (params: Promise<ExperienceParams> | ExperienceParams) =>
+  typeof (params as Promise<ExperienceParams>).then === "function"
+    ? (params as Promise<ExperienceParams>)
+    : Promise.resolve(params as ExperienceParams);
+
 export function generateStaticParams() {
   return experiences.map((experience) => ({ id: experience.id }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: ExperienceParams;
-}): Metadata {
-  const experience = experiences.find((item) => item.id === params.id);
+  params: Promise<ExperienceParams> | ExperienceParams;
+}): Promise<Metadata> {
+  const resolvedParams = await resolveParams(params);
+  const experience = experiences.find((item) => item.id === resolvedParams.id);
 
   if (!experience) {
     return {
@@ -33,12 +39,13 @@ export function generateMetadata({
   };
 }
 
-export default function ExperienceDetail({
+export default async function ExperienceDetail({
   params,
 }: {
-  params: ExperienceParams;
+  params: Promise<ExperienceParams> | ExperienceParams;
 }) {
-  const experience = experiences.find((item) => item.id === params.id);
+  const resolvedParams = await resolveParams(params);
+  const experience = experiences.find((item) => item.id === resolvedParams.id);
 
   if (!experience) {
     notFound();

@@ -11,6 +11,7 @@ export interface Experience {
   highlights: string[];
   outcomes: string[];
   image?: string;
+  video?: string;
   externalLink?: string;
   pdf?: string;
 }
@@ -19,13 +20,13 @@ export const experiences: Experience[] = [
   {
     id: "bufitcheck",
     organization: "Boston University Spark!",
-    title: "Technical Teammate · BUFitCheck",
+    title: "Technical Teammate · BUSpark!",
     description:
-      "Building BU FitCheck — a sustainability-focused hybrid web/mobile app that powers thrift shop inventory and student browsing.",
+      "Building BU FitCheck inside BU Spark! — a sustainability-focused hybrid web/mobile app that powers thrift shop inventory and student browsing.",
     timeline: "Aug 2025 – Present",
-    role: "Full-Stack Engineer",
+    role: "Full-Stack Technical Teammate",
     summary:
-      "Leading frontend and API integration for BU FitCheck, a Next.js + Ionic platform that lets thrift shops manage inventory while students browse listings with AI-assisted metadata and search.",
+      "Leading frontend and API integration for BU FitCheck as part of BU Spark!, combining Next.js, Ionic, and Google Cloud Functions so thrift shops manage inventory while students browse AI-tagged listings enriched by Cloud Vision analysis.",
     tech: [
       "Next.js",
       "Ionic Framework",
@@ -38,6 +39,7 @@ export const experiences: Experience[] = [
       "TailwindCSS",
     ],
     image: "/images/experience/Fitcheck.png",
+    video: "https://www.youtube.com/embed/95s9VP7q1rY",
     highlights: [
       "Developed a hybrid Ionic + Next.js interface so shop owners can manage stock and students can browse listings in real time.",
       "Modeled serverless Firestore schemas and Cloud Functions that keep inventory updates under 150ms round-trip.",

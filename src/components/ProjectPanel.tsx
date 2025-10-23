@@ -73,6 +73,16 @@ export default function ProjectPanel({ project, index }: ProjectPanelProps) {
               External Link →
             </a>
           ) : null}
+          {project.videos?.length ? (
+            <a
+              href={project.videos[0]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs uppercase tracking-[0.25em] text-accent underline-offset-4 hover:underline"
+            >
+              Watch Demo →
+            </a>
+          ) : null}
         </motion.div>
       </div>
     </motion.article>

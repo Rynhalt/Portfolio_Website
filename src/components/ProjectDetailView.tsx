@@ -24,8 +24,54 @@ interface ProjectDetailViewProps {
   project: Project;
 }
 
+const getYoutubeEmbedUrl = (url: string) => {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+
+    if (host === "youtu.be") {
+      const videoId = parsed.pathname.slice(1);
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+
+    if (host.endsWith("youtube.com")) {
+      if (parsed.pathname.startsWith("/embed/")) {
+        return url;
+      }
+
+      if (parsed.pathname.startsWith("/shorts/")) {
+        const segments = parsed.pathname.split("/").filter(Boolean);
+        const videoId = segments[1] ?? segments[0];
+        if (videoId) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      }
+
+      const videoId = parsed.searchParams.get("v");
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+  } catch {
+    // fall through to return original url
+  }
+
+  return url;
+};
+
 export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
   const typeLabel = typeLabels[project.type];
+  const gallery = Array.from(
+    new Set(
+      project.gallery && project.gallery.length > 0
+        ? project.gallery
+        : project.image
+          ? [project.image]
+          : [],
+    ),
+  );
 
   return (
     <main className="flex flex-1 flex-col gap-16 px-6 pb-24 md:px-12 lg:px-24">
@@ -148,6 +194,34 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
               ))}
             </ul>
           </div>
+          {project.videos?.map((video) => (
+            <div
+              key={video}
+              className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)]"
+            >
+              <div className="w-full" style={{ aspectRatio: "16 / 9" }}>
+                <iframe
+                  src={getYoutubeEmbedUrl(video)}
+                  title={`${project.title} demo`}
+                  className="h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          ))}
+          {gallery.map((image) => (
+            <figure key={image} className="overflow-hidden rounded-xl border border-gold/30">
+              <Image
+                src={image}
+                alt={`${project.title} preview`}
+                width={640}
+                height={360}
+                className="h-full w-full object-cover"
+                priority
+              />
+            </figure>
+          ))}
           {project.pdf ? (
             <div className="pdf-frame h-[28rem] md:h-[34rem] lg:h-[40rem]">
               <object
@@ -169,18 +243,6 @@ export default function ProjectDetailView({ project }: ProjectDetailViewProps) {
                 </p>
               </object>
             </div>
-          ) : null}
-          {project.image ? (
-            <figure className="overflow-hidden rounded-xl border border-gold/30">
-              <Image
-                src={project.image}
-                alt={`${project.title} preview`}
-                width={640}
-                height={360}
-                className="h-full w-full object-cover"
-                priority
-              />
-            </figure>
           ) : null}
           {project.externalLink ? (
             <a

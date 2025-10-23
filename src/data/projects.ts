@@ -5,6 +5,7 @@ export interface Project {
   tech: string[];
   emoji?: string;
   image?: string;
+  gallery?: string[];
   pdf?: string;
   externalLink?: string;
   timeline: string;
@@ -12,6 +13,7 @@ export interface Project {
   summary: string;
   highlights: string[];
   outcomes: string[];
+  videos?: string[];
   type: "system" | "ai" | "web" | "hackathon" | "robotics";
 }
 
@@ -33,6 +35,10 @@ export const projects: Project[] = [
     ],
     emoji: "🎧",
     image: "/images/projects/Echodio.png",
+    gallery: [
+      "/images/projects/Echodio.png",
+      "/images/projects/Echodio2.png",
+    ],
     timeline: "Jun 2024 – Sep 2024",
     role: "Product Engineer",
     summary:
@@ -47,6 +53,7 @@ export const projects: Project[] = [
       "Delivered an always-fresh ambient companion that removes the overhead of playlist curation for focus workflows.",
       "Established hooks for upcoming Apple Watch mood detection and social playlist sharing features.",
     ],
+    videos: ["https://www.youtube.com/watch?v=1h2ezTZUQog"],
     type: "web",
   },
   {
@@ -80,6 +87,10 @@ export const projects: Project[] = [
       "Delivered an explainable baseline mirroring BlackRock’s research and ready for reinforcement-learning extensions.",
       "Enabled researchers to monitor live debates and reasoning traces through a FastAPI + Jinja interface.",
     ],
+    videos: [
+      "https://www.youtube.com/watch?v=hKLtMo6ddo8",
+      "https://www.youtube.com/watch?v=InjFbHU7RYk",
+    ],
     type: "ai",
   },
   {
@@ -99,6 +110,9 @@ export const projects: Project[] = [
     ],
     emoji: "☕",
     image: "/images/projects/SpaceCafe.png",
+    videos: [
+      "https://www.youtube.com/watch?v=1VFKOktbCgE",
+    ],
     timeline: "Apr 2024 – Jun 2024",
     role: "Frontend & Systems Lead",
     summary:

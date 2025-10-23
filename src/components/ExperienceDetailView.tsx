@@ -16,6 +16,43 @@ interface ExperienceDetailViewProps {
   experience: Experience;
 }
 
+const getYoutubeEmbedUrl = (url: string) => {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.replace(/^www\./, "");
+
+    if (host === "youtu.be") {
+      const videoId = parsed.pathname.slice(1);
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+
+    if (host.endsWith("youtube.com")) {
+      if (parsed.pathname.startsWith("/embed/")) {
+        return url;
+      }
+
+      if (parsed.pathname.startsWith("/shorts/")) {
+        const segments = parsed.pathname.split("/").filter(Boolean);
+        const videoId = segments[1] ?? segments[0];
+        if (videoId) {
+          return `https://www.youtube.com/embed/${videoId}`;
+        }
+      }
+
+      const videoId = parsed.searchParams.get("v");
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+  } catch {
+    // no-op, fall through to return original url
+  }
+
+  return url;
+};
+
 export default function ExperienceDetailView({
   experience,
 }: ExperienceDetailViewProps) {
@@ -140,6 +177,19 @@ export default function ExperienceDetailView({
               ))}
             </ul>
           </div>
+          {experience.video ? (
+            <div className="overflow-hidden rounded-xl border border-gold/30 shadow-[0_18px_36px_rgba(8,9,30,0.35)]">
+              <div className="w-full" style={{ aspectRatio: "16 / 9" }}>
+                <iframe
+                  src={getYoutubeEmbedUrl(experience.video)}
+                  title={`${experience.title} demo`}
+                  className="h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          ) : null}
           {experience.image ? (
             <figure className="overflow-hidden rounded-xl border border-gold/30">
               <Image
