@@ -61,7 +61,7 @@ export const experiences: Experience[] = [
     role: "Equity Systems Developer Intern",
     summary:
       "Built the KDB observability stack for the Equity Systems Division — exporters, dashboards, and trace tooling that track system, process, and pipeline latency across tickerplant, RDB, and HDB flows handling Tokyo Stock Exchange feeds.",
-    tech: ["KDB+ / q", "TorQ", "Grafana", "Prometheus", "Linux", "Shell", "Python", "Docker"],
+    tech: ["KDB+ / q", "TorQ", "Grafana", "Prometheus", "Linux", "Shell", "Python"],
     image: "/images/experience/Nikko.png",
     pdf: "/pdfs/SMBC_KDB.pdf",
     highlights: [
@@ -92,7 +92,10 @@ export const experiences: Experience[] = [
       "Google Cloud Functions",
       "OpenAI API",
       "Node.js",
-      "Material UI",
+      "PostgreSQL",
+      "Docker",
+      "Prisma",
+      "DBeaver",
     ],
     image: "/images/experience/ProConnect.png",
     highlights: [

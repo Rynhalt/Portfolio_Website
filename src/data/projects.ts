@@ -68,7 +68,6 @@ export const projects: Project[] = [
       "Server-Sent Events",
       "JSONL",
       "Jinja",
-      "GitHub Actions",
     ],
     image: "/images/projects/alpha.png",
     timeline: "Aug 2025 – Present",
