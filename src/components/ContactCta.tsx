@@ -18,9 +18,9 @@ export default function ContactCta() {
           Let&apos;s connect
         </h3>
         <p className="mt-4 text-base text-foreground/80">
-          I&apos;m working on distributed systems, AI agents, and product
-          interfaces. Message me on LinkedIn if you want to collaborate or talk
-          shop.
+          I&apos;m exploring AI agents, market-tech systems, and music-driven
+          interfaces. Message me on LinkedIn if you want to collaborate or chat
+          about tech.
         </p>
         <motion.a
           whileHover={{ y: -2 }}
