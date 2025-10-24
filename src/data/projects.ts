@@ -50,7 +50,6 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Delivered an always-fresh ambient companion that removes the overhead of playlist curation for focus workflows.",
-      "Established hooks for upcoming Apple Watch mood detection and social playlist sharing features.",
     ],
     videos: ["https://www.youtube.com/watch?v=1h2ezTZUQog"],
     type: "web",
@@ -82,7 +81,6 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Delivered an explainable baseline mirroring BlackRock’s research and ready for reinforcement-learning extensions.",
-      "Enabled researchers to monitor live debates and reasoning traces through a FastAPI + Jinja interface.",
     ],
     videos: [
       "https://www.youtube.com/watch?v=hKLtMo6ddo8",
@@ -121,7 +119,6 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Provided a mental-wellbeing prototype that helps astronauts maintain emotional ties during missions.",
-      "Established the foundation for future VR and biometric feedback integrations within the experience.",
     ],
     type: "web",
   },

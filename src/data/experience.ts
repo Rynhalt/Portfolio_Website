@@ -106,7 +106,6 @@ export const experiences: Experience[] = [
     ],
     outcomes: [
       "Accelerated consultant matching by automating skill extraction and opportunity triage.",
-      "Improved platform reliability through guardrails that reduced noisy API retries under heavy usage.",
     ],
   },
 ];
