@@ -1,5 +1,5 @@
 
-# 🧙 AGENT.md — Development Manifesto for Rynhalt.github.io
+# readme.md — Development Manifesto for Rynhalt.github.io
 
 ## 🧭 Project Overview
 **Rynhalt.github.io** is a personal portfolio that blends **modern design principles** with **retro JRPG aesthetics** inspired by the *Dragon Quest* series.  
