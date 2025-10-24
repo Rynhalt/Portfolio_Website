@@ -99,7 +99,7 @@ export const experiences: Experience[] = [
     ],
     image: "/images/experience/ProConnect.png",
     highlights: [
-      "Implemented responsive React dashboards with robust state management for consultant and client intake flows.",
+      "Built React workflows that guide consultants through profile setup and availability updates.",
       "Integrated OpenAI pipelines that extract key skills from resumes and automate consultant-to-project matching.",
       "Managed Firestore schemas and Cloud Functions handling authentication, multi-tenant data access, and auditing.",
       "Designed validation and rate limiting to keep API calls performant under peak onboarding loads.",
