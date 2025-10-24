@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "/images/projects/Echodio2.png",
       "/images/projects/Echodio3.png",
     ],
-    timeline: "Jun 2024 – Sep 2024",
+    timeline: "May 2025 – Jun 2025",
     role: "Product Engineer",
     summary:
       "Built a weather-driven ambient player with Suno AI tracks and Firebase session sync.",
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     videos: [
       "https://www.youtube.com/watch?v=1VFKOktbCgE",
     ],
-    timeline: "Apr 2024 – Jun 2024",
+    timeline: "Nov 2024",
     role: "Frontend & Systems Lead",
     summary:
       "Built an interstellar café experience with Three.js visuals, Socket.io chat, and ambient audio to support astronaut wellbeing.",

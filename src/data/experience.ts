@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
     title: "Technical Teammate · BU Spark!",
     description:
       "Shipping BU FitCheck at BU Spark!, a hybrid web/mobile app that keeps thrift shop inventory and student browsing in sync.",
-    timeline: "Aug 2025 – Present",
+    timeline: "Sep 2025 – Present",
     role: "Current Technical Teammate",
     summary:
       "Maintain the BU FitCheck frontend and APIs with Cloud Functions, Cloud Vision, and OpenAI to keep inventory updates and search fast.",
